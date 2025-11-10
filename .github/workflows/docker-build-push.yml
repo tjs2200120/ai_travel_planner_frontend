@@ -35,7 +35,7 @@ jobs:
       - name: Login to Aliyun Container Registry
         uses: docker/login-action@v3  # Docker 官方登录 Action
         with:
-          registry: registry.cn-hangzhou.aliyuncs.com  # 阿里云镜像仓库域名（固定）
+          registry: crpi-8xy8j2v0myoc1g99.cn-hangzhou.personal.cr.aliyuncs.com  # 阿里云镜像仓库域名（固定）
           username: ${{ secrets.ALIYUN_AK_ID }}         # 从 Secrets 中读取 AK ID
           password: ${{ secrets.ALIYUN_AK_SECRET }}     # 从 Secrets 中读取 AK Secret
 
